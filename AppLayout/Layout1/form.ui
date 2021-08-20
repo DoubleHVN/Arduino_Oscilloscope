@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>App</class>
+ <widget class="QWidget" name="App">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1265</width>
+    <height>755</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>App</string>
+  </property>
+  <widget class="QGroupBox" name="Controller">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>10</y>
+     <width>991</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Controller</string>
+   </property>
+   <widget class="QGroupBox" name="Serial">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>781</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Serial</string>
+    </property>
+    <widget class="QComboBox" name="Baudrates">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>30</y>
+       <width>75</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>600</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>1200</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2400</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>4800</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>9600</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>14400</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>19200</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>38400</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>56000</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>57600</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>115200</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Baudrate:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>30</y>
+       <width>55</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>COM</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="Com">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>30</y>
+       <width>75</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Com1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Com2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Com3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Com4</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Com5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Com6</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Com7</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Com8</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Com9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Com10</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Com11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Com12</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>30</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Data Size:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>30</y>
+       <width>55</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Parity:</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="DataSize">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>30</y>
+       <width>75</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>7</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>8</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="Parity">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>30</y>
+       <width>75</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>none</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>odd</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>even</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>mark</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="Connect">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>30</y>
+       <width>80</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Connect</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="Saver">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>991</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Saver</string>
+    </property>
+    <widget class="QPushButton" name="Record">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>40</y>
+       <width>80</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Record</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>40</y>
+       <width>55</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Type:</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="Type">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>40</y>
+       <width>75</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>csv</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>xlsx</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>40</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Length (ms):</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="Length">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>40</y>
+       <width>75</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>55</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Model:</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="Model">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>40</y>
+       <width>75</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Mark9.7</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="Stream">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>20</y>
+      <width>191</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Stream</string>
+    </property>
+    <widget class="QPushButton" name="Start">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>80</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Start</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Reset">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>30</y>
+       <width>80</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reset</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="SeriaPlotter">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>200</y>
+     <width>631</width>
+     <height>521</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Serial Plotter</string>
+   </property>
+   <widget class="PlotWidget" name="Plotter" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>631</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="SerialMonitor">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>190</y>
+     <width>521</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Serrial Monitor</string>
+   </property>
+   <widget class="QTextBrowser" name="Monitor">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>521</width>
+      <height>141</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="AutoScroll">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>170</y>
+      <width>91</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Auto Scroll</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Max:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>170</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Min:</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="Max">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>170</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_2">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>170</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="Send">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>390</y>
+     <width>521</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Send</string>
+   </property>
+   <widget class="QTextEdit" name="textEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>311</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="Hex">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>30</y>
+      <width>83</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hex</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Send_2">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>30</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Send</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QWidget</extends>
+   <header>pyqtgraph</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
